@@ -1,0 +1,4 @@
+verilog isim_temp "medianSort.v"
+verilog isim_temp "medianSort_top.v"
+verilog isim_temp "medianSort_tb.v"
+verilog isim_temp "/opt/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v"

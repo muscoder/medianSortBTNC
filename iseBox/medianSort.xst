@@ -1,0 +1,5 @@
+set -tmpdir "/home/mustafa/Dropbox/iseWorkspace/medianSort/xst/projnav.tmp"
+set -xsthdpdir "/home/mustafa/Dropbox/iseWorkspace/medianSort/xst"
+elaborate
+-ifn medianSort.prj
+-ifmt mixed

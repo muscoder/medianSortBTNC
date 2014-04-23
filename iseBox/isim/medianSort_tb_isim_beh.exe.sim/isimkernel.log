@@ -1,0 +1,29 @@
+Command line:
+   medianSort_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58662
+
+Tue Apr 22 13:40:41 2014
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 204.624 Meg
+
+ Total Signals          : 109
+ Total Nets             : 449
+ Total Signal Drivers   : 63
+ Total Blocks           : 25
+ Total Primitive Blocks : 23
+ Total Processes        : 92
+ Total Traceable Variables  : 102
+ Total Scalar Nets and Variables : 2627
+Total Line Count : 201
+
+ Total Simulation Time: 0.24 sec
+
+ Current Memory Usage: 280.125 Meg
+
+Tue Apr 22 15:45:55 2014
+

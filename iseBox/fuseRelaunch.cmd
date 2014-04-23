@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/mustafa/Dropbox/iseWorkspace/medianSort/medianSort_tb_isim_beh.exe" -prj "/home/mustafa/Dropbox/iseWorkspace/medianSort/medianSort_tb_beh.prj" "work.medianSort_tb" "work.glbl" 

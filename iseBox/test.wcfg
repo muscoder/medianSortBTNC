@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/mustafa/Dropbox/iseWorkspace/medianSort/medianSort_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="medianSort_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/medianSort_tb/dataOut" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataOut[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataOut[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/medianSort_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/medianSort_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/medianSort_tb/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[0:49,7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[0:49,7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/medianSort_tb/data[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[0,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[1,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[2,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[3,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[4,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[5,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[6,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[7,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[8]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[8,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[8,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[9]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[9,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[9,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[10]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[10,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[10,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[11]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[11,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[11,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[12]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[12,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[12,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[13]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[13,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[13,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[14]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[14,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[14,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[15]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[15,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[15,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[16]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[16,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[16,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[17]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[17,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[17,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[18]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[18,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[18,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[19]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[19,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[19,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[20]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[20,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[20,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[21]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[21,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[21,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[22]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[22,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[22,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[23]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[23,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[23,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[24]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[24,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[24,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[25]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[25,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[25,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[26]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[26,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[26,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[27]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[27,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[27,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[28]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[28,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[28,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[29]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[29,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[29,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[30]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[30,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[30,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[31]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[31,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[31,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[32]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[32,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[32,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[33]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[33,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[33,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[34]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[34,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[34,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[35]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[35,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[35,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[36]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[36,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[36,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[37]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[37,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[37,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[38]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[38,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[38,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[39]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[39,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[39,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[40]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[40,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[40,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[41]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[41,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[41,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[42]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[42,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[42,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[43]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[43,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[43,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[44]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[44,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[44,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[45]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[45,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[45,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[46]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[46,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[46,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[47]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[47,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[47,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[48]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[48,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[48,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/medianSort_tb/data[49]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[49,7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[49,7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/medianSort_tb/dataIn0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataIn0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn0[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/medianSort_tb/dataIn1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataIn1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/medianSort_tb/dataIn2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataIn2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn2[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/medianSort_tb/dataIn3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataIn3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn3[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/medianSort_tb/dataIn4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataIn4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn4[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/medianSort_tb/dataIn5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataIn5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn5[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/medianSort_tb/dataIn6" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataIn6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn6[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/medianSort_tb/dataIn7" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataIn7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn7[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/medianSort_tb/dataIn8" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataIn8[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn8[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/medianSort_tb/ii" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ii[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ii[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/medianSort_tb/CLKTB_HALF_PERIOD" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">CLKTB_HALF_PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CLKTB_HALF_PERIOD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/medianSort_tb/medianSort_top_UUT/dataIn0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataIn0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn0[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/medianSort_tb/medianSort_top_UUT/dataIn1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataIn1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/medianSort_tb/RST_DEASSERT_DLY" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RST_DEASSERT_DLY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RST_DEASSERT_DLY[31:0]</obj_property>
+   </wvobject>
+</wave_config>

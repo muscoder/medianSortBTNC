@@ -1,0 +1,390 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.34 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.34 secs
+ 
+--> Reading design: medianSort_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "medianSort_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "medianSort_top"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : medianSort_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "medianSort.v" in library work
+Compiling verilog file "medianSort_top.v" in library work
+Module <medianSort> compiled
+Module <medianSort_top> compiled
+No errors in compilation
+Analysis of file <"medianSort_top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <medianSort_top> in library <work> with parameters.
+	DATA_SIZE = "00000000000000000000000000001000"
+
+Analyzing hierarchy for module <medianSort> in library <work> with parameters.
+	DATA_SIZE = "00000000000000000000000000001000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <medianSort_top>.
+	DATA_SIZE = 32'sb00000000000000000000000000001000
+Module <medianSort_top> is correct for synthesis.
+ 
+Analyzing module <medianSort> in library <work>.
+	DATA_SIZE = 32'sb00000000000000000000000000001000
+Module <medianSort> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <medianSort>.
+    Related source file is "medianSort.v".
+WARNING:Xst:646 - Signal <comp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <medianSort> synthesized.
+
+
+Synthesizing Unit <medianSort_top>.
+    Related source file is "medianSort_top.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <comp48> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <comp34> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Summary:
+	inferred   2 Comparator(s).
+Unit <medianSort_top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Comparators                                          : 24
+ 8-bit comparator greater                              : 24
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Comparators                                          : 24
+ 8-bit comparator greater                              : 24
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <medianSort_top> ...
+
+Optimizing unit <medianSort> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block medianSort_top, actual ratio is 30.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : medianSort_top.ngr
+Top Level Output File Name         : medianSort_top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 82
+
+Cell Usage :
+# BELS                             : 692
+#      LUT2                        : 33
+#      LUT3                        : 298
+#      LUT4                        : 165
+#      MUXCY                       : 192
+#      MUXF5                       : 3
+#      VCC                         : 1
+# IO Buffers                       : 80
+#      IBUF                        : 72
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                      270  out of    960    28%  
+ Number of 4 input LUTs:                496  out of   1920    25%  
+ Number of IOs:                          82
+ Number of bonded IOBs:                  80  out of     83    96%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 33.377ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 92974509192 / 8
+-------------------------------------------------------------------------
+Delay:               33.377ns (Levels of Logic = 72)
+  Source:            dataIn7<1> (PAD)
+  Destination:       dataOut<7> (PAD)
+
+  Data Path: dataIn7<1> to dataOut<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.106   0.690  dataIn7_1_IBUF (dataIn7_1_IBUF)
+     LUT2:I0->O            1   0.612   0.000  medianSort_30/Mcompar__old_comp_9_lut<1> (medianSort_30/Mcompar__old_comp_9_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  medianSort_30/Mcompar__old_comp_9_cy<1> (medianSort_30/Mcompar__old_comp_9_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_30/Mcompar__old_comp_9_cy<2> (medianSort_30/Mcompar__old_comp_9_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_30/Mcompar__old_comp_9_cy<3> (medianSort_30/Mcompar__old_comp_9_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_30/Mcompar__old_comp_9_cy<4> (medianSort_30/Mcompar__old_comp_9_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_30/Mcompar__old_comp_9_cy<5> (medianSort_30/Mcompar__old_comp_9_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_30/Mcompar__old_comp_9_cy<6> (medianSort_30/Mcompar__old_comp_9_cy<6>)
+     MUXCY:CI->O          30   0.399   1.224  medianSort_30/Mcompar__old_comp_9_cy<7> (medianSort_30/Mcompar__old_comp_9_cy<7>)
+     LUT3:I0->O            3   0.612   0.603  medianSort_30/dataOut0<0>1 (mn67<0>)
+     LUT4:I0->O            1   0.612   0.000  medianSort_31/Mcompar__old_comp_9_lut<0> (medianSort_31/Mcompar__old_comp_9_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  medianSort_31/Mcompar__old_comp_9_cy<0> (medianSort_31/Mcompar__old_comp_9_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_31/Mcompar__old_comp_9_cy<1> (medianSort_31/Mcompar__old_comp_9_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_31/Mcompar__old_comp_9_cy<2> (medianSort_31/Mcompar__old_comp_9_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_31/Mcompar__old_comp_9_cy<3> (medianSort_31/Mcompar__old_comp_9_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_31/Mcompar__old_comp_9_cy<4> (medianSort_31/Mcompar__old_comp_9_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_31/Mcompar__old_comp_9_cy<5> (medianSort_31/Mcompar__old_comp_9_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_31/Mcompar__old_comp_9_cy<6> (medianSort_31/Mcompar__old_comp_9_cy<6>)
+     MUXCY:CI->O          30   0.399   1.224  medianSort_31/Mcompar__old_comp_9_cy<7> (medianSort_31/Mcompar__old_comp_9_cy<7>)
+     LUT3:I0->O            3   0.612   0.603  medianSort_31/dataOut1<0>1 (mxGH<0>)
+     LUT4:I0->O            1   0.612   0.000  medianSort_22/Mcompar__old_comp_9_lut<0> (medianSort_22/Mcompar__old_comp_9_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  medianSort_22/Mcompar__old_comp_9_cy<0> (medianSort_22/Mcompar__old_comp_9_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_22/Mcompar__old_comp_9_cy<1> (medianSort_22/Mcompar__old_comp_9_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_22/Mcompar__old_comp_9_cy<2> (medianSort_22/Mcompar__old_comp_9_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_22/Mcompar__old_comp_9_cy<3> (medianSort_22/Mcompar__old_comp_9_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_22/Mcompar__old_comp_9_cy<4> (medianSort_22/Mcompar__old_comp_9_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_22/Mcompar__old_comp_9_cy<5> (medianSort_22/Mcompar__old_comp_9_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_22/Mcompar__old_comp_9_cy<6> (medianSort_22/Mcompar__old_comp_9_cy<6>)
+     MUXCY:CI->O          30   0.399   1.224  medianSort_22/Mcompar__old_comp_9_cy<7> (medianSort_22/Mcompar__old_comp_9_cy<7>)
+     LUT3:I0->O            7   0.612   0.754  medianSort_22/dataOut0<0>1 (mnE1F1<0>)
+     LUT4:I0->O            1   0.612   0.000  medianSort_13/Mcompar__old_comp_9_lut<0> (medianSort_13/Mcompar__old_comp_9_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  medianSort_13/Mcompar__old_comp_9_cy<0> (medianSort_13/Mcompar__old_comp_9_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_13/Mcompar__old_comp_9_cy<1> (medianSort_13/Mcompar__old_comp_9_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_13/Mcompar__old_comp_9_cy<2> (medianSort_13/Mcompar__old_comp_9_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_13/Mcompar__old_comp_9_cy<3> (medianSort_13/Mcompar__old_comp_9_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_13/Mcompar__old_comp_9_cy<4> (medianSort_13/Mcompar__old_comp_9_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_13/Mcompar__old_comp_9_cy<5> (medianSort_13/Mcompar__old_comp_9_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_13/Mcompar__old_comp_9_cy<6> (medianSort_13/Mcompar__old_comp_9_cy<6>)
+     MUXCY:CI->O          20   0.399   1.089  medianSort_13/Mcompar__old_comp_9_cy<7> (medianSort_13/Mcompar__old_comp_9_cy<7>)
+     LUT3:I0->O            3   0.612   0.603  medianSort_13/dataOut1<1>1 (mnC2D2<1>)
+     LUT4:I0->O            1   0.612   0.000  medianSort_34/Mcompar__old_comp_9_lut<1> (medianSort_34/Mcompar__old_comp_9_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  medianSort_34/Mcompar__old_comp_9_cy<1> (medianSort_34/Mcompar__old_comp_9_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_34/Mcompar__old_comp_9_cy<2> (medianSort_34/Mcompar__old_comp_9_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_34/Mcompar__old_comp_9_cy<3> (medianSort_34/Mcompar__old_comp_9_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_34/Mcompar__old_comp_9_cy<4> (medianSort_34/Mcompar__old_comp_9_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_34/Mcompar__old_comp_9_cy<5> (medianSort_34/Mcompar__old_comp_9_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_34/Mcompar__old_comp_9_cy<6> (medianSort_34/Mcompar__old_comp_9_cy<6>)
+     MUXCY:CI->O          16   0.399   1.031  medianSort_34/Mcompar__old_comp_9_cy<7> (medianSort_34/Mcompar__old_comp_9_cy<7>)
+     LUT4:I0->O            1   0.612   0.000  medianSort_34/dataOut0<0>12 (medianSort_34/dataOut0<0>11)
+     MUXF5:I0->O           2   0.278   0.532  medianSort_34/dataOut0<0>1_f5 (mxG3H3<0>)
+     LUT4:I0->O            1   0.612   0.000  medianSort_25/Mcompar__old_comp_9_lut<0> (medianSort_25/Mcompar__old_comp_9_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  medianSort_25/Mcompar__old_comp_9_cy<0> (medianSort_25/Mcompar__old_comp_9_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_25/Mcompar__old_comp_9_cy<1> (medianSort_25/Mcompar__old_comp_9_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_25/Mcompar__old_comp_9_cy<2> (medianSort_25/Mcompar__old_comp_9_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_25/Mcompar__old_comp_9_cy<3> (medianSort_25/Mcompar__old_comp_9_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_25/Mcompar__old_comp_9_cy<4> (medianSort_25/Mcompar__old_comp_9_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_25/Mcompar__old_comp_9_cy<5> (medianSort_25/Mcompar__old_comp_9_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_25/Mcompar__old_comp_9_cy<6> (medianSort_25/Mcompar__old_comp_9_cy<6>)
+     MUXCY:CI->O          16   0.399   1.031  medianSort_25/Mcompar__old_comp_9_cy<7> (medianSort_25/Mcompar__old_comp_9_cy<7>)
+     LUT4:I0->O            1   0.612   0.000  medianSort_25/dataOut0<0>12 (medianSort_25/dataOut0<0>11)
+     MUXF5:I0->O           2   0.278   0.532  medianSort_25/dataOut0<0>1_f5 (mxC4D4<0>)
+     LUT4:I0->O            1   0.612   0.000  Mcompar__old_comp34_1_lut<0> (Mcompar__old_comp34_1_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Mcompar__old_comp34_1_cy<0> (Mcompar__old_comp34_1_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar__old_comp34_1_cy<1> (Mcompar__old_comp34_1_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar__old_comp34_1_cy<2> (Mcompar__old_comp34_1_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar__old_comp34_1_cy<3> (Mcompar__old_comp34_1_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar__old_comp34_1_cy<4> (Mcompar__old_comp34_1_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar__old_comp34_1_cy<5> (Mcompar__old_comp34_1_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar__old_comp34_1_cy<6> (Mcompar__old_comp34_1_cy<6>)
+     MUXCY:CI->O           8   0.399   0.795  Mcompar__old_comp34_1_cy<7> (Mcompar__old_comp34_1_cy<7>)
+     LUT3:I0->O            1   0.612   0.357  dataOut<7>1 (dataOut_7_OBUF)
+     OBUF:I->O                 3.169          dataOut_7_OBUF (dataOut<7>)
+    ----------------------------------------
+    Total                     33.377ns (21.084ns logic, 12.294ns route)
+                                       (63.2% logic, 36.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 14.03 secs
+ 
+--> 
+
+Total memory usage is 289588 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
