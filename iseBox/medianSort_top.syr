@@ -1,18 +1,21 @@
-Release 14.4 - xst P.49d (nt64)
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.34 secs
+Total CPU time to Xst completion: 0.04 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.34 secs
+Total CPU time to Xst completion: 0.04 secs
  
---> Reading design: medianSort_top.prj
+--> 
+Reading design: medianSort_top.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -142,7 +145,7 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <medianSort>.
     Related source file is "medianSort.v".
-WARNING:Xst:646 - Signal <comp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit comparator greater for signal <dataOut0$cmp_gt0000> created at line 38.
     Summary:
 	inferred   1 Comparator(s).
 Unit <medianSort> synthesized.
@@ -152,8 +155,8 @@ Synthesizing Unit <medianSort_top>.
     Related source file is "medianSort_top.v".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:646 - Signal <comp48> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <comp34> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit comparator greater for signal <comp34>.
+    Found 8-bit comparator greater for signal <comp48>.
     Summary:
 	inferred   2 Comparator(s).
 Unit <medianSort_top> synthesized.
@@ -227,12 +230,12 @@ Design Statistics
 # IOs                              : 82
 
 Cell Usage :
-# BELS                             : 692
+# BELS                             : 715
 #      LUT2                        : 33
-#      LUT3                        : 298
-#      LUT4                        : 165
+#      LUT3                        : 299
+#      LUT4                        : 179
 #      MUXCY                       : 192
-#      MUXF5                       : 3
+#      MUXF5                       : 11
 #      VCC                         : 1
 # IO Buffers                       : 80
 #      IBUF                        : 72
@@ -244,8 +247,8 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-5 
 
- Number of Slices:                      270  out of    960    28%  
- Number of 4 input LUTs:                496  out of   1920    25%  
+ Number of Slices:                      278  out of    960    28%  
+ Number of 4 input LUTs:                511  out of   1920    26%  
  Number of IOs:                          82
  Number of bonded IOBs:                  80  out of     83    96%  
 
@@ -280,7 +283,7 @@ Speed Grade: -5
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 33.377ns
+   Maximum combinational path delay: 34.090ns
 
 Timing Detail:
 --------------
@@ -288,9 +291,9 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 92974509192 / 8
+  Total number of paths / destination ports: 182300521983 / 8
 -------------------------------------------------------------------------
-Delay:               33.377ns (Levels of Logic = 72)
+Delay:               34.090ns (Levels of Logic = 73)
   Source:            dataIn7<1> (PAD)
   Destination:       dataOut<7> (PAD)
 
@@ -299,92 +302,94 @@ Delay:               33.377ns (Levels of Logic = 72)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             5   1.106   0.690  dataIn7_1_IBUF (dataIn7_1_IBUF)
-     LUT2:I0->O            1   0.612   0.000  medianSort_30/Mcompar__old_comp_9_lut<1> (medianSort_30/Mcompar__old_comp_9_lut<1>)
-     MUXCY:S->O            1   0.404   0.000  medianSort_30/Mcompar__old_comp_9_cy<1> (medianSort_30/Mcompar__old_comp_9_cy<1>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_30/Mcompar__old_comp_9_cy<2> (medianSort_30/Mcompar__old_comp_9_cy<2>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_30/Mcompar__old_comp_9_cy<3> (medianSort_30/Mcompar__old_comp_9_cy<3>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_30/Mcompar__old_comp_9_cy<4> (medianSort_30/Mcompar__old_comp_9_cy<4>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_30/Mcompar__old_comp_9_cy<5> (medianSort_30/Mcompar__old_comp_9_cy<5>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_30/Mcompar__old_comp_9_cy<6> (medianSort_30/Mcompar__old_comp_9_cy<6>)
-     MUXCY:CI->O          30   0.399   1.224  medianSort_30/Mcompar__old_comp_9_cy<7> (medianSort_30/Mcompar__old_comp_9_cy<7>)
+     LUT2:I0->O            1   0.612   0.000  medianSort_30/Mcompar_dataOut0_cmp_gt0000_lut<1> (medianSort_30/Mcompar_dataOut0_cmp_gt0000_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  medianSort_30/Mcompar_dataOut0_cmp_gt0000_cy<1> (medianSort_30/Mcompar_dataOut0_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_30/Mcompar_dataOut0_cmp_gt0000_cy<2> (medianSort_30/Mcompar_dataOut0_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_30/Mcompar_dataOut0_cmp_gt0000_cy<3> (medianSort_30/Mcompar_dataOut0_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_30/Mcompar_dataOut0_cmp_gt0000_cy<4> (medianSort_30/Mcompar_dataOut0_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_30/Mcompar_dataOut0_cmp_gt0000_cy<5> (medianSort_30/Mcompar_dataOut0_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_30/Mcompar_dataOut0_cmp_gt0000_cy<6> (medianSort_30/Mcompar_dataOut0_cmp_gt0000_cy<6>)
+     MUXCY:CI->O          30   0.399   1.224  medianSort_30/Mcompar_dataOut0_cmp_gt0000_cy<7> (medianSort_30/Mcompar_dataOut0_cmp_gt0000_cy<7>)
      LUT3:I0->O            3   0.612   0.603  medianSort_30/dataOut0<0>1 (mn67<0>)
-     LUT4:I0->O            1   0.612   0.000  medianSort_31/Mcompar__old_comp_9_lut<0> (medianSort_31/Mcompar__old_comp_9_lut<0>)
-     MUXCY:S->O            1   0.404   0.000  medianSort_31/Mcompar__old_comp_9_cy<0> (medianSort_31/Mcompar__old_comp_9_cy<0>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_31/Mcompar__old_comp_9_cy<1> (medianSort_31/Mcompar__old_comp_9_cy<1>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_31/Mcompar__old_comp_9_cy<2> (medianSort_31/Mcompar__old_comp_9_cy<2>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_31/Mcompar__old_comp_9_cy<3> (medianSort_31/Mcompar__old_comp_9_cy<3>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_31/Mcompar__old_comp_9_cy<4> (medianSort_31/Mcompar__old_comp_9_cy<4>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_31/Mcompar__old_comp_9_cy<5> (medianSort_31/Mcompar__old_comp_9_cy<5>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_31/Mcompar__old_comp_9_cy<6> (medianSort_31/Mcompar__old_comp_9_cy<6>)
-     MUXCY:CI->O          30   0.399   1.224  medianSort_31/Mcompar__old_comp_9_cy<7> (medianSort_31/Mcompar__old_comp_9_cy<7>)
+     LUT4:I0->O            1   0.612   0.000  medianSort_31/Mcompar_dataOut0_cmp_gt0000_lut<0> (medianSort_31/Mcompar_dataOut0_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  medianSort_31/Mcompar_dataOut0_cmp_gt0000_cy<0> (medianSort_31/Mcompar_dataOut0_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_31/Mcompar_dataOut0_cmp_gt0000_cy<1> (medianSort_31/Mcompar_dataOut0_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_31/Mcompar_dataOut0_cmp_gt0000_cy<2> (medianSort_31/Mcompar_dataOut0_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_31/Mcompar_dataOut0_cmp_gt0000_cy<3> (medianSort_31/Mcompar_dataOut0_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_31/Mcompar_dataOut0_cmp_gt0000_cy<4> (medianSort_31/Mcompar_dataOut0_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_31/Mcompar_dataOut0_cmp_gt0000_cy<5> (medianSort_31/Mcompar_dataOut0_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_31/Mcompar_dataOut0_cmp_gt0000_cy<6> (medianSort_31/Mcompar_dataOut0_cmp_gt0000_cy<6>)
+     MUXCY:CI->O          30   0.399   1.224  medianSort_31/Mcompar_dataOut0_cmp_gt0000_cy<7> (medianSort_31/Mcompar_dataOut0_cmp_gt0000_cy<7>)
      LUT3:I0->O            3   0.612   0.603  medianSort_31/dataOut1<0>1 (mxGH<0>)
-     LUT4:I0->O            1   0.612   0.000  medianSort_22/Mcompar__old_comp_9_lut<0> (medianSort_22/Mcompar__old_comp_9_lut<0>)
-     MUXCY:S->O            1   0.404   0.000  medianSort_22/Mcompar__old_comp_9_cy<0> (medianSort_22/Mcompar__old_comp_9_cy<0>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_22/Mcompar__old_comp_9_cy<1> (medianSort_22/Mcompar__old_comp_9_cy<1>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_22/Mcompar__old_comp_9_cy<2> (medianSort_22/Mcompar__old_comp_9_cy<2>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_22/Mcompar__old_comp_9_cy<3> (medianSort_22/Mcompar__old_comp_9_cy<3>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_22/Mcompar__old_comp_9_cy<4> (medianSort_22/Mcompar__old_comp_9_cy<4>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_22/Mcompar__old_comp_9_cy<5> (medianSort_22/Mcompar__old_comp_9_cy<5>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_22/Mcompar__old_comp_9_cy<6> (medianSort_22/Mcompar__old_comp_9_cy<6>)
-     MUXCY:CI->O          30   0.399   1.224  medianSort_22/Mcompar__old_comp_9_cy<7> (medianSort_22/Mcompar__old_comp_9_cy<7>)
+     LUT4:I0->O            1   0.612   0.000  medianSort_22/Mcompar_dataOut0_cmp_gt0000_lut<0> (medianSort_22/Mcompar_dataOut0_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  medianSort_22/Mcompar_dataOut0_cmp_gt0000_cy<0> (medianSort_22/Mcompar_dataOut0_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_22/Mcompar_dataOut0_cmp_gt0000_cy<1> (medianSort_22/Mcompar_dataOut0_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_22/Mcompar_dataOut0_cmp_gt0000_cy<2> (medianSort_22/Mcompar_dataOut0_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_22/Mcompar_dataOut0_cmp_gt0000_cy<3> (medianSort_22/Mcompar_dataOut0_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_22/Mcompar_dataOut0_cmp_gt0000_cy<4> (medianSort_22/Mcompar_dataOut0_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_22/Mcompar_dataOut0_cmp_gt0000_cy<5> (medianSort_22/Mcompar_dataOut0_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_22/Mcompar_dataOut0_cmp_gt0000_cy<6> (medianSort_22/Mcompar_dataOut0_cmp_gt0000_cy<6>)
+     MUXCY:CI->O          30   0.399   1.224  medianSort_22/Mcompar_dataOut0_cmp_gt0000_cy<7> (medianSort_22/Mcompar_dataOut0_cmp_gt0000_cy<7>)
      LUT3:I0->O            7   0.612   0.754  medianSort_22/dataOut0<0>1 (mnE1F1<0>)
-     LUT4:I0->O            1   0.612   0.000  medianSort_13/Mcompar__old_comp_9_lut<0> (medianSort_13/Mcompar__old_comp_9_lut<0>)
-     MUXCY:S->O            1   0.404   0.000  medianSort_13/Mcompar__old_comp_9_cy<0> (medianSort_13/Mcompar__old_comp_9_cy<0>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_13/Mcompar__old_comp_9_cy<1> (medianSort_13/Mcompar__old_comp_9_cy<1>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_13/Mcompar__old_comp_9_cy<2> (medianSort_13/Mcompar__old_comp_9_cy<2>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_13/Mcompar__old_comp_9_cy<3> (medianSort_13/Mcompar__old_comp_9_cy<3>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_13/Mcompar__old_comp_9_cy<4> (medianSort_13/Mcompar__old_comp_9_cy<4>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_13/Mcompar__old_comp_9_cy<5> (medianSort_13/Mcompar__old_comp_9_cy<5>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_13/Mcompar__old_comp_9_cy<6> (medianSort_13/Mcompar__old_comp_9_cy<6>)
-     MUXCY:CI->O          20   0.399   1.089  medianSort_13/Mcompar__old_comp_9_cy<7> (medianSort_13/Mcompar__old_comp_9_cy<7>)
+     LUT4:I0->O            1   0.612   0.000  medianSort_13/Mcompar_dataOut0_cmp_gt0000_lut<0> (medianSort_13/Mcompar_dataOut0_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  medianSort_13/Mcompar_dataOut0_cmp_gt0000_cy<0> (medianSort_13/Mcompar_dataOut0_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_13/Mcompar_dataOut0_cmp_gt0000_cy<1> (medianSort_13/Mcompar_dataOut0_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_13/Mcompar_dataOut0_cmp_gt0000_cy<2> (medianSort_13/Mcompar_dataOut0_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_13/Mcompar_dataOut0_cmp_gt0000_cy<3> (medianSort_13/Mcompar_dataOut0_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_13/Mcompar_dataOut0_cmp_gt0000_cy<4> (medianSort_13/Mcompar_dataOut0_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_13/Mcompar_dataOut0_cmp_gt0000_cy<5> (medianSort_13/Mcompar_dataOut0_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_13/Mcompar_dataOut0_cmp_gt0000_cy<6> (medianSort_13/Mcompar_dataOut0_cmp_gt0000_cy<6>)
+     MUXCY:CI->O          20   0.399   1.089  medianSort_13/Mcompar_dataOut0_cmp_gt0000_cy<7> (medianSort_13/Mcompar_dataOut0_cmp_gt0000_cy<7>)
      LUT3:I0->O            3   0.612   0.603  medianSort_13/dataOut1<1>1 (mnC2D2<1>)
-     LUT4:I0->O            1   0.612   0.000  medianSort_34/Mcompar__old_comp_9_lut<1> (medianSort_34/Mcompar__old_comp_9_lut<1>)
-     MUXCY:S->O            1   0.404   0.000  medianSort_34/Mcompar__old_comp_9_cy<1> (medianSort_34/Mcompar__old_comp_9_cy<1>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_34/Mcompar__old_comp_9_cy<2> (medianSort_34/Mcompar__old_comp_9_cy<2>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_34/Mcompar__old_comp_9_cy<3> (medianSort_34/Mcompar__old_comp_9_cy<3>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_34/Mcompar__old_comp_9_cy<4> (medianSort_34/Mcompar__old_comp_9_cy<4>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_34/Mcompar__old_comp_9_cy<5> (medianSort_34/Mcompar__old_comp_9_cy<5>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_34/Mcompar__old_comp_9_cy<6> (medianSort_34/Mcompar__old_comp_9_cy<6>)
-     MUXCY:CI->O          16   0.399   1.031  medianSort_34/Mcompar__old_comp_9_cy<7> (medianSort_34/Mcompar__old_comp_9_cy<7>)
+     LUT4:I0->O            1   0.612   0.000  medianSort_34/Mcompar_dataOut0_cmp_gt0000_lut<1> (medianSort_34/Mcompar_dataOut0_cmp_gt0000_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  medianSort_34/Mcompar_dataOut0_cmp_gt0000_cy<1> (medianSort_34/Mcompar_dataOut0_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_34/Mcompar_dataOut0_cmp_gt0000_cy<2> (medianSort_34/Mcompar_dataOut0_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_34/Mcompar_dataOut0_cmp_gt0000_cy<3> (medianSort_34/Mcompar_dataOut0_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_34/Mcompar_dataOut0_cmp_gt0000_cy<4> (medianSort_34/Mcompar_dataOut0_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_34/Mcompar_dataOut0_cmp_gt0000_cy<5> (medianSort_34/Mcompar_dataOut0_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_34/Mcompar_dataOut0_cmp_gt0000_cy<6> (medianSort_34/Mcompar_dataOut0_cmp_gt0000_cy<6>)
+     MUXCY:CI->O          16   0.399   1.031  medianSort_34/Mcompar_dataOut0_cmp_gt0000_cy<7> (medianSort_34/Mcompar_dataOut0_cmp_gt0000_cy<7>)
      LUT4:I0->O            1   0.612   0.000  medianSort_34/dataOut0<0>12 (medianSort_34/dataOut0<0>11)
      MUXF5:I0->O           2   0.278   0.532  medianSort_34/dataOut0<0>1_f5 (mxG3H3<0>)
-     LUT4:I0->O            1   0.612   0.000  medianSort_25/Mcompar__old_comp_9_lut<0> (medianSort_25/Mcompar__old_comp_9_lut<0>)
-     MUXCY:S->O            1   0.404   0.000  medianSort_25/Mcompar__old_comp_9_cy<0> (medianSort_25/Mcompar__old_comp_9_cy<0>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_25/Mcompar__old_comp_9_cy<1> (medianSort_25/Mcompar__old_comp_9_cy<1>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_25/Mcompar__old_comp_9_cy<2> (medianSort_25/Mcompar__old_comp_9_cy<2>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_25/Mcompar__old_comp_9_cy<3> (medianSort_25/Mcompar__old_comp_9_cy<3>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_25/Mcompar__old_comp_9_cy<4> (medianSort_25/Mcompar__old_comp_9_cy<4>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_25/Mcompar__old_comp_9_cy<5> (medianSort_25/Mcompar__old_comp_9_cy<5>)
-     MUXCY:CI->O           1   0.052   0.000  medianSort_25/Mcompar__old_comp_9_cy<6> (medianSort_25/Mcompar__old_comp_9_cy<6>)
-     MUXCY:CI->O          16   0.399   1.031  medianSort_25/Mcompar__old_comp_9_cy<7> (medianSort_25/Mcompar__old_comp_9_cy<7>)
+     LUT4:I0->O            1   0.612   0.000  medianSort_25/Mcompar_dataOut0_cmp_gt0000_lut<0> (medianSort_25/Mcompar_dataOut0_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  medianSort_25/Mcompar_dataOut0_cmp_gt0000_cy<0> (medianSort_25/Mcompar_dataOut0_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_25/Mcompar_dataOut0_cmp_gt0000_cy<1> (medianSort_25/Mcompar_dataOut0_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_25/Mcompar_dataOut0_cmp_gt0000_cy<2> (medianSort_25/Mcompar_dataOut0_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_25/Mcompar_dataOut0_cmp_gt0000_cy<3> (medianSort_25/Mcompar_dataOut0_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_25/Mcompar_dataOut0_cmp_gt0000_cy<4> (medianSort_25/Mcompar_dataOut0_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_25/Mcompar_dataOut0_cmp_gt0000_cy<5> (medianSort_25/Mcompar_dataOut0_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  medianSort_25/Mcompar_dataOut0_cmp_gt0000_cy<6> (medianSort_25/Mcompar_dataOut0_cmp_gt0000_cy<6>)
+     MUXCY:CI->O          23   0.399   1.174  medianSort_25/Mcompar_dataOut0_cmp_gt0000_cy<7> (medianSort_25/Mcompar_dataOut0_cmp_gt0000_cy<7>)
      LUT4:I0->O            1   0.612   0.000  medianSort_25/dataOut0<0>12 (medianSort_25/dataOut0<0>11)
-     MUXF5:I0->O           2   0.278   0.532  medianSort_25/dataOut0<0>1_f5 (mxC4D4<0>)
-     LUT4:I0->O            1   0.612   0.000  Mcompar__old_comp34_1_lut<0> (Mcompar__old_comp34_1_lut<0>)
-     MUXCY:S->O            1   0.404   0.000  Mcompar__old_comp34_1_cy<0> (Mcompar__old_comp34_1_cy<0>)
-     MUXCY:CI->O           1   0.051   0.000  Mcompar__old_comp34_1_cy<1> (Mcompar__old_comp34_1_cy<1>)
-     MUXCY:CI->O           1   0.051   0.000  Mcompar__old_comp34_1_cy<2> (Mcompar__old_comp34_1_cy<2>)
-     MUXCY:CI->O           1   0.051   0.000  Mcompar__old_comp34_1_cy<3> (Mcompar__old_comp34_1_cy<3>)
-     MUXCY:CI->O           1   0.051   0.000  Mcompar__old_comp34_1_cy<4> (Mcompar__old_comp34_1_cy<4>)
-     MUXCY:CI->O           1   0.051   0.000  Mcompar__old_comp34_1_cy<5> (Mcompar__old_comp34_1_cy<5>)
-     MUXCY:CI->O           1   0.051   0.000  Mcompar__old_comp34_1_cy<6> (Mcompar__old_comp34_1_cy<6>)
-     MUXCY:CI->O           8   0.399   0.795  Mcompar__old_comp34_1_cy<7> (Mcompar__old_comp34_1_cy<7>)
-     LUT3:I0->O            1   0.612   0.357  dataOut<7>1 (dataOut_7_OBUF)
+     MUXF5:I0->O           3   0.278   0.603  medianSort_25/dataOut0<0>1_f5 (mxC4D4<0>)
+     LUT4:I0->O            1   0.612   0.000  Mcompar_comp34_lut<0> (Mcompar_comp34_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_comp34_cy<0> (Mcompar_comp34_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_comp34_cy<1> (Mcompar_comp34_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_comp34_cy<2> (Mcompar_comp34_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_comp34_cy<3> (Mcompar_comp34_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_comp34_cy<4> (Mcompar_comp34_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_comp34_cy<5> (Mcompar_comp34_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_comp34_cy<6> (Mcompar_comp34_cy<6>)
+     MUXCY:CI->O          15   0.399   1.016  Mcompar_comp34_cy<7> (Mcompar_comp34_cy<7>)
+     LUT4:I0->O            1   0.612   0.000  dataOut<7>1 (dataOut<7>1)
+     MUXF5:I1->O           1   0.278   0.357  dataOut<7>_f5 (dataOut_7_OBUF)
      OBUF:I->O                 3.169          dataOut_7_OBUF (dataOut<7>)
     ----------------------------------------
-    Total                     33.377ns (21.084ns logic, 12.294ns route)
-                                       (63.2% logic, 36.8% route)
+    Total                     34.090ns (21.362ns logic, 12.729ns route)
+                                       (62.7% logic, 37.3% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 14.03 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.96 secs
  
 --> 
 
-Total memory usage is 289588 kilobytes
+
+Total memory usage is 517004 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    5 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

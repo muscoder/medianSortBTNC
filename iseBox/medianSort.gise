@@ -15,7 +15,7 @@
 
   <!--                                                          -->
 
-  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
 
   <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
 
@@ -184,11 +184,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1398253828" xil_pn:in_ck="-8646244351306579147" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7789324621477504162" xil_pn:start_ts="1398253791">
+    <transform xil_pn:end_ts="1398292831" xil_pn:in_ck="-8646244351306579147" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7789324621477504162" xil_pn:start_ts="1398292823">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="medianSort.ngr"/>
       <outfile xil_pn:name="medianSort_top.lso"/>

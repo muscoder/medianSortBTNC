@@ -28,20 +28,20 @@ input 		[DATA_SIZE - 1:0] dataIn1;
 output reg 	[DATA_SIZE - 1:0] dataOut0;
 output reg 	[DATA_SIZE - 1:0] dataOut1;
 
-reg comp;
+//reg comp;
 
 always @(*) begin
 // mod00
-	comp 	= dataIn0 > dataIn1;  // dataIn0 = 0, dataIn1 = 1
+	/*comp 	= dataIn0 > dataIn1;  // dataIn0 = 0, dataIn1 = 1
 	dataOut0		= comp ? dataIn0 : dataIn1;
-	dataOut1	 	= comp ? dataIn1 : dataIn0;
-	//if(dataIn0 > dataIn1) begin
-		//dataOut0 = dataIn0;
-		//dataOut1 = dataIn1;
-	//end else begin
-		//dataOut0 = dataIn1;
-		//dataOut1 = dataIn0;
-	//end
+	dataOut1	 	= comp ? dataIn1 : dataIn0;*/
+	if(dataIn0 > dataIn1) begin
+		dataOut0 = dataIn0;
+		dataOut1 = dataIn1;
+	end else begin
+		dataOut0 = dataIn1;
+		dataOut1 = dataIn0;
+	end
 end
 
 endmodule

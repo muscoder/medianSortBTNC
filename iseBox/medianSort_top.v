@@ -1,4 +1,3 @@
-`timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -39,10 +38,10 @@ input 		[DATA_SIZE - 1:0] 	dataIn7;
 input 		[DATA_SIZE - 1:0] 	dataIn8;
 output reg	[DATA_SIZE - 1:0] 	dataOut;
 
-//wire comp34;
-//wire comp48;
-reg comp34;
-reg comp48;
+wire comp34;
+wire comp48;
+//reg comp34;
+//reg comp48;
 
 wire [DATA_SIZE-1:0] mx01;
 wire [DATA_SIZE-1:0] mn01;
@@ -106,7 +105,7 @@ medianSort medianSort_34(.dataIn0(mnC2D2), .dataIn1(mnG2H2), .dataOut0(mxG3H3), 
 medianSort medianSort_15(.dataIn0(mnA3B3), .dataIn1(mnC3D3), .dataOut0(), .dataOut1(mnA4B4));
 medianSort medianSort_25(.dataIn0(mxE3F3), .dataIn1(mxG3H3), .dataOut0(mxC4D4), .dataOut1());
 
-/*assign comp34 = mnA4B4 > mxC4D4;
+assign comp34 = mnA4B4 > mxC4D4;
 assign comp48 = mxC4D4 > dataIn8;
 
 always @(*) begin
@@ -115,15 +114,15 @@ always @(*) begin
 		2'b1x: dataOut = mnA4B4;
 	   2'bx0: dataOut = mxC4D4;
 	endcase
-end*/
+end
 
-always @(*) begin
+/*always @(*) begin
 	comp34		= (mnA4B4 > mxC4D4);
 	comp48		= (mxC4D4 > dataIn8);
 	dataOut		= (({comp34,comp48} == 2'b10) || ({comp34,comp48} == 2'b11))? mnA4B4 : 0;
 	dataOut 	= (({comp34,comp48} == 2'b00) || ({comp34,comp48} == 2'b10))? mxC4D4 : 0;
 	dataOut		= ({comp34,comp48} == 2'b00) ? dataIn8 : 0;
-end
+end*/
 
 /*always@(*) begin
 	//comp34 	= mnA4B4 > mxC4D4; // mnA4B4 -> 3, mxC4D4 -> 4
